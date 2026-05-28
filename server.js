@@ -48,3 +48,10 @@ app.get('/', (req, res) => {
 
   res.send('Server del mio blog');
 });
+
+
+app.get('/bacheca', (req, res) => {
+
+  res.send(posts);
+
+});
