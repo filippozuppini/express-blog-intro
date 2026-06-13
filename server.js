@@ -2,36 +2,38 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
+app.use(express.static('public'));
+
 
 const posts = [
   {
     title: "chi sono",
     content: "Ciao mi chiamo Filippo ho 24 anni",
-    image: "/img/foto.png",
+    image: "/img/ciambellone.jpeg",
     tags: ["me", "la-mia-storia"],
   },
   {
     title: "titolo di studio",
     content: "Ho la terza media",
-    image: "/img/foto.png",
+    image: "/img/ciambellone.jpeg",
     tags: ["studio", "scuola"],
   },
   {
     title: "i miei hobby",
     content: "Non ho hobby",
-    image: "/img/foto.png",
+    image: "/img/ciambellone.jpeg",
     tags: ["hobby", "passione"],
   },
   {
     title: "le mie abilitá",
     content: "Non ho abilitá",
-    image: "/img/foto.png",
+    image: "/img/ciambellone.jpeg",
     tags: ["abilitá", "booooh"],
   },
   {
     title: "non lo so",
     content: "non lo so",
-    image: "/img/foto.png",
+    image: "/img/ciambellone.jpeg",
     tags: ["booh", "booh2"],
   }
 
